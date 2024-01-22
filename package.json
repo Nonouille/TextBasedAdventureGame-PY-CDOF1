@@ -1,0 +1,19 @@
+{
+  "name": "textbasedadventuregame-py-cdof1",
+  "version": "1.0.0",
+  "description": "A text based adventure where the player's decisions define the outcome of the story.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nonouille/TextBasedAdventureGame-PY-CDOF1.git"
+  },
+  "author": "Nonouille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nonouille/TextBasedAdventureGame-PY-CDOF1/issues"
+  },
+  "homepage": "https://github.com/Nonouille/TextBasedAdventureGame-PY-CDOF1#readme"
+}
