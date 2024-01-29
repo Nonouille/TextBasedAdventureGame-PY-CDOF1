@@ -1,26 +1,38 @@
 var prompt = require('prompt-sync')();
 //Let's introduce the game and get to know the player
+
+function typeEffect(text) {
+    for (let i = 0; i < text.length; i++) {
+        process.stdout.write(text.charAt(i));
+        // you can adjust the timeout value (e.g., 50) to control the typing speed 
+        require('child_process').execSync('sleep 0.05');
+    }
+    console.log(); // Move to the next line after typing
+}
+
+
+
 var playerName = "";
 console.log("\n\n\n");
-console.log("Welcome, young adventurer.");
-console.log("My name is Nestor. I am the master of this game. The omniscient in your future adventures and potentially, your future killer.\n");
-console.log("First things first, what's your name ?");
+typeEffect("Welcome, young adventurer.");
+typeEffect("My name is Nestor. I am the master of this game. The omniscient in your future adventures and potentially, your future killer.\n");
+typeEffect("First things first, what's your name ?");
 playerName = prompt("Enter your name : ");
-console.log("Well, nice to meet you ".concat(playerName, "!\n\n"));
-console.log("Welcome to the wonderful world of Decentrol.\nThere is something I want to know about you ...\n");
+typeEffect("Well, nice to meet you ".concat(playerName, "!\n\n"));
+typeEffect("Welcome to the wonderful world of Decentrol.\nThere is something I want to know about you ...\n");
 var startGame = "";
 while (startGame.toLowerCase() != "yes" && startGame.toLowerCase() != "no") {
     console.log();
-    console.log("Are you brave enough for me to carry a mission on you ?");
+    typeEffect("Are you brave enough for me to carry a mission on you ?");
     startGame = prompt("(Yes/No) ");
     switch (startGame.toLowerCase()) {
         case 'yes':
-            console.log('Super, come with me !');
+            typeEffect('Super, come with me !');
             break;
         case 'no':
-            console.log('I\' ll wait for someone else to save us then...');
+            typeEffect('I\' ll wait for someone else to save us then...');
             break;
         default:
-            console.log('I may not have understood your answer ...');
+            typeEffect('I may not have understood your answer ...');
     }
 }
