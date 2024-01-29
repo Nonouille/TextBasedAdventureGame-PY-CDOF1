@@ -4,13 +4,11 @@ var prompt = require('prompt-sync')();
 function typeEffect(text) {
     for (let i = 0; i < text.length; i++) {
         process.stdout.write(text.charAt(i));
-        // you can adjust the timeout value (e.g., 50) to control the typing speed 
-        require('child_process').execSync('sleep 0.05');
+        // Use 'ping' command for delay on Windows
+        require('child_process').execSync('ping 127.0.0.1 -n 1 -w 500 > nul');
     }
     console.log(); // Move to the next line after typing
 }
-
-
 
 var playerName = "";
 console.log("\n\n\n");
@@ -30,7 +28,7 @@ while (startGame.toLowerCase() != "yes" && startGame.toLowerCase() != "no") {
             typeEffect('Super, come with me !');
             break;
         case 'no':
-            typeEffect('I\' ll wait for someone else to save us then...');
+            typeEffect('I\'ll wait for someone else to save us then...');
             break;
         default:
             typeEffect('I may not have understood your answer ...');
