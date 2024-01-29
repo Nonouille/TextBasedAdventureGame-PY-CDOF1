@@ -5,7 +5,7 @@ function typeEffect(text) {
     for (let i = 0; i < text.length; i++) {
         process.stdout.write(text.charAt(i));
         // Use 'ping' command for delay on Windows
-        require('child_process').execSync('ping 127.0.0.1 -n 1 -w 500 > nul');
+        require('child_process').execSync('ping 127.0.0.1 -n 1 -w 100 > nul');
     }
     console.log(); // Move to the next line after typing
 }
