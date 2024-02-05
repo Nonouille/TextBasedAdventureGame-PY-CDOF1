@@ -1,10 +1,24 @@
-# TextBasedAdventureGame-PY-CDOF1
-A text based adventure where the player's decisions define the outcome of the story.
-NEW UPDATE !!! Classes added : the player can choose from 4 classes with each a decisive advantage !!
+# Text-Based Adventure Game - Version 1.0
 
-To run the project you will only have to type "node app.ts" and the app will display in the console.
-If it does not work, try "node app.js".
+Welcome to an exciting text-based adventure where your decisions shape the story! We've just rolled out a new update, introducing classes that add a unique twist to your gameplay.
 
-This is a open source project, feel free to contribute !
-Only add your name in the comment above the text you type.
+## How to Play
 
+To embark on this thrilling journey, simply type the command:
+```bash
+node app.ts
+```
+If, for some reason, that doesn't work, try:
+
+```bash
+
+node app.js
+```
+## Classes
+
+Now, you have the power to choose from four different classes, each with its own decisive advantage. Will you be the cunning Rogue, the mighty Warrior, the mystical Mage, or the versatile Ranger? The choice is yours!
+Contributions Welcome!
+
+## Contribution
+
+This project is open source, and we encourage you to contribute. Add your name above the text you contribute to make your mark on this epic adventure.
